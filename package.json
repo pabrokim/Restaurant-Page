@@ -1,0 +1,16 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "This project offers an opportunity to continue practice DOM manipulation by dynamically rendering a simple restaurant homepage. It will use Javascript alone to generate the entire contents of the website. Note however, the inclusion of styling from a seperate CSS file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
