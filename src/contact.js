@@ -17,6 +17,7 @@ export default function addContact(){
         const photoHolder = document.createElement('div');
         let staffPhoto = document.createElement('img');
         staffPhoto.src = myStaff.photo;
+        staffPhoto.classList.add('images');
 
         photoHolder.appendChild(staffPhoto);
 
@@ -24,9 +25,9 @@ export default function addContact(){
         contactCard.classList.add('contactCard');
 
         const person = document.createElement('p')
-        person.textContent = `Name: ${myStaff.person}`
+        person.textContent = myStaff.person;
         const position =document.createElement('p');
-        position.textContent = `Position: ${myStaff.position}`
+        position.textContent = `Role: ${myStaff.position}`
         const phone = document.createElement('p');
         phone.textContent = `Phone Number: ${myStaff.phone}`
         const email = document.createElement('p');

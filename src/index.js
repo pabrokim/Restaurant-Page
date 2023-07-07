@@ -2,19 +2,20 @@
 import pageLoad from "./pageload";
 import addMenuItem from "./menu";
 import addContact from "./contact";
+pageLoad();
 
 const content = document.querySelector('#content');
 
-function homeLoad(){
+const homeLoad = ()=>{
     content.innerHTML = '';
     pageLoad();
 }
-function menuLoad(){
+const menuLoad = ()=>{
     content.innerHTML = '';
     addMenuItem();
 
 }
-function contactLoad(){
+const contactLoad = ()=>{
     content.innerHTML = '';
     addContact();
 }

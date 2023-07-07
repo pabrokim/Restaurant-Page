@@ -18,6 +18,7 @@ export default function addMenuItem(){
         let menuImg = document.createElement('img');
         menuImg.src= menuItem.Img;
         menuImg.alt = 'item';
+        menuImg.classList.add('images');
 
         imgHolder.appendChild(menuImg);
         
@@ -26,9 +27,9 @@ export default function addMenuItem(){
         detailsCard.classList.add('detailsCard');
 
         let name = document.createElement('p');
-        name.textContent = `Name: ${menuItem.Name}`
+        name.textContent = menuItem.Name;
         const description = document.createElement('p');
-        description.textContent = `Description: ${menuItem.Description}`
+        description.textContent = menuItem.Description;
         const price = document.createElement('p');
         price.textContent = `Price: ${menuItem.Price}`;
 
